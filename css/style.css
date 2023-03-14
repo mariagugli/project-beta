@@ -1,1 +1,108 @@
-@import url(./library/site.scss);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Syncopate:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "syncopate", sans-serif;
+  font-weight: 700;
+}
+
+.intro__bottombar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-bottom: 50px;
+  gap: 10px;
+}
+
+.topbar {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 12px;
+}
+
+.section__intro {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 20px 0;
+  gap: 61px;
+  border-radius: 0 0 38px 38px;
+  background: url("../../img/cartel_musica.png") no-repeat center;
+  background-size: cover;
+}
+
+.bottombar__btn__subir h5 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.intro__slogan {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-right: 20px;
+}
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.topbar__btn__menu {
+  padding: 30px 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bottombar__btn__buscador {
+  width: 70%;
+  padding: 8px 13px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  color: #FFFFFF;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.bottombar__btn__subir {
+  padding: 23px;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  color: #FFFFFF;
+}

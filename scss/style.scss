@@ -1,2 +1,10 @@
-@import url(./library/site.scss);
+@import './library/_site.scss';
+@import './library/_sections.scss';
+@import './library/_headers.scss';
+@import './library/_typography.scss';
+@import './library/_images.scss';
+@import './library/_lists.scss';
+@import './library/_forms.scss';
+@import './library/_buttons.scss';
 
+@import './library/_utilities.scss';

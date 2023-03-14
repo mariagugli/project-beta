@@ -1,0 +1,26 @@
+/////*     SECTIONS y TOPBAR    *//////
+
+.topbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+}
+
+.section__intro {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;  
+  align-items: flex-end;
+  padding: 20px 0;
+  gap: 61px;
+  border-radius: 0 0 38px 38px;
+
+  background: url("../../img/cartel_musica.png") no-repeat center;
+  background-size: cover;
+
+}
