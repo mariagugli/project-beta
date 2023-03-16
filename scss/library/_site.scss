@@ -2,11 +2,47 @@ body {
     margin:0;
     padding: 0;
 
-    font-family: 'syncopate', sans-serif;
-    font-weight: 700;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
 }
 
-///////* DIVs *//////
+/*   ARTICLES   */
+
+.about__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 22px 20px;
+    gap: 20px;
+}
+
+.funcionamiento__subir,
+.funcionamiento__buscar {
+    margin-top: 50px;
+}
+
+@media all and (min-width: 800px) {
+    .funcionamiento__subir,
+    .funcionamiento__buscar {
+        width: 50%;
+    }
+}
+
+/* DIVs */
+
+.topbar__nav {
+    display: none;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 45px;
+
+}
+
+@media all and (min-width: 800px) {
+    .topbar__nav {
+        display: flex;
+    }
+}
 
 .intro__bottombar {
     display: flex;
@@ -17,3 +53,89 @@ body {
     gap: 10px;
 
 }
+
+.about__video {
+    width: 100vw;
+    padding: 200px 0;
+    background-color: lightgray;
+}
+
+.profile__tag,
+.profile__tag--amarillo,
+.profile__tag--verde,
+.profile__tag--azul {
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 0 8px;
+    display: inline-block;
+    text-align: center;
+
+    font-size: 12px;
+}
+
+.profile__tag--amarillo {
+    @include tag__color($color__principal__amarillo);
+}
+
+.profile__tag--verde {
+    @include tag__color;
+}
+
+.profile__tag--azul {
+    @include tag__color($color__principal__azul);
+}
+
+.funcionamiento__intro {
+    background-color: $color__gray--lowopacity;
+    border-radius: 42px 42px 0 0;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer__nav__menu--rightborder {
+    border-right: 1px solid black;
+}
+
+.menu__redes {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+
+    margin-top: 20px;
+}   
+
+@media all and (min-width: 800px) {
+
+    .funcionamiento_partes {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        gap: 23px;
+    }
+
+    .footer_newsletter,
+    .menu__redes {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 1324px) {
+
+    .resumen__bgfotos {
+        display: flex;
+        width: 100%;
+    }
+
+    .funcionamiento_partes {
+        padding: 0 250px;
+    }
+}
+
+
+
+

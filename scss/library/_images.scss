@@ -1,6 +1,51 @@
 // IMAGES Y SVG //
+.topbar__logo {
+    padding: 20px;
+}
+
 .intro__slogan {
     object-fit: cover;
     padding-right: 20px;
 
+}
+
+.article__list__profile img {
+    width: 120px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 42px;
+}
+
+.resumenfotos__bgfotos--contactos {
+    @include bgfotos__withtags;
+}
+
+.resumenfotos__bgfotos--experiencia {
+    @include bgfotos__withtags (url(../../img/img_claqueta.jpg)no-repeat center, left, 150px 21px 250px);
+}
+
+.resumenfotos__bgfotos--herramientas {
+    @include bgfotos__withtags (url(../../img/img-rodaje-monitor.jpg)no-repeat center, right, 250px 15px 150px);
+}
+
+@media all and (min-width: 1324px) {
+    .resumenfotos__bgfotos--contactos {
+        @include bgfotos__withtags(url(../../img/img-camara-frontal.jpg)no-repeat center, right, 400px 45px);
+        width: 100%
+    }
+    
+    .resumenfotos__bgfotos--experiencia {
+        @include bgfotos__withtags (url(../../img/img_claqueta.jpg)no-repeat center, left, 250px 21px 550px);
+        width: 100%
+    }
+    
+    .resumenfotos__bgfotos--herramientas {
+        @include bgfotos__withtags (url(../../img/img-rodaje-monitor.jpg)no-repeat center, right, 350px 30px 450px);
+        width: 100%
+    }
+}
+
+.asociacion__article img {
+    max-width: 240px;
+    object-fit: cover;
 }

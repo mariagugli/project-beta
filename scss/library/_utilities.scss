@@ -1,0 +1,28 @@
+$color__principal__verde: rgba(185, 213, 138, 1);
+$color__principal__azul: rgba(80, 173, 177, 1);
+$color__principal__amarillo: rgba(239, 196, 123, 1);
+$color__secundario__morado: rgba(57, 45, 91, 1);
+
+$color__dark: rgba(50, 50, 50, 1);
+$color__dark__gray: rgba(72, 72, 72, 1);
+$color__gray: rgba(217, 217, 217, 1);
+$color__gray--lowopacity: rgba(217, 217, 217, 0.2);
+$color__white: rgba(255, 255, 255, 1);
+$color__white--lowopacity: rgba(255, 255, 255, 0.2);
+
+@mixin tag__color ($color: $color__principal__verde) {
+    font-size: 20px;
+    background-color: $color;
+}
+
+@mixin bgfotos__withtags ($bgfoto: (url("../../img/img-camara-frontal.jpg")no-repeat center), $text-align: right, $padding: 200px 45px, $bgsize: cover) {
+    background: $bgfoto;
+    background-size: $bgsize;
+    text-align: $text-align;
+    padding: $padding;
+}
+
+.margin--bottom {
+    margin-bottom: 20px;
+}
+

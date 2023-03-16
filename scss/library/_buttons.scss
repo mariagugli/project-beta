@@ -5,6 +5,9 @@ button {
     background: none;
     border: none;
     cursor: pointer;
+
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
 }
 .topbar__btn__menu {
     padding: 30px 50px;
@@ -13,25 +16,68 @@ button {
     right: 0;
 }
 
+@media all and (min-width: 800px) {
+    .topbar__btn__menu {
+        display: none;
+    }
+}
+
 .bottombar__btn__buscador {
     width: 70%;
     padding: 8px 13px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid #FFFFFF;
+    background: $color__white--lowopacity;
+    border: 1px solid $color__white;
     border-radius: 20px;
-    color: #FFFFFF;
+    color: $color__white;
     text-align: left;
 
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
     font-size: 14px;
 }
 
 .bottombar__btn__subir {
-    padding: 23px;
+    padding: 18px 23px;
     gap: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid #FFFFFF;
-    border-radius: 20px;
-    color: #FFFFFF;
+    background: $color__white--lowopacity;
+    border: 1px solid $color__white;
+    border-radius: 14px;
+    color: $color__white;
+}
+
+.list__btn__profile {
+    text-align: left;
+    
+}
+
+.btn__mas,
+.btn__mas--margin60 {
+    background: $color__principal__verde;
+    margin-top: 20px;
+    padding: 3px 39px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.btn__mas--margin60 {
+    margin-top: 60px;
+}
+
+.btn__funcionamiento {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    background: $color__gray;
+    border: 1px solid black;
+    border-radius: 42px;
+}
+
+.btn__suscribir {
+    background-color: $color__dark;
+    color: $color__white;
+    border-radius: 42px;
+    padding: 10px 24px;
+    font-weight: 400;
+    font-size: 12px;
 }

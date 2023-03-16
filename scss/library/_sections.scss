@@ -1,4 +1,7 @@
 /////*     SECTIONS y TOPBAR    *//////
+.pattern__section {
+  margin-bottom: 80px;
+}
 
 .topbar {
   position: fixed;
@@ -6,6 +9,13 @@
   justify-content: center;
   width: 100%;
   padding: 12px;
+}
+
+@media all and (min-width: 800px) {
+  .topbar {
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .section__intro {
@@ -22,5 +32,40 @@
 
   background: url("../../img/cartel_musica.png") no-repeat center;
   background-size: cover;
+}
+
+.section__about {
+  width: 100vw;
+}
+
+.section__resumenfotos,
+.section__funcionamiento,
+.section__asociacion {
+  text-align: center;
+}
+
+.section__funcionamiento {
+  padding: 30px 15px 0px;
+}
+
+.section__asociacion {
+  padding: 12px;
+}
+
+/*   FOOTER   */
+
+.footer {
+  background-color: $color__principal__amarillo;
+  padding: 60px 30px;
 
 }
+
+@media all and (min-width: 800px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 90px;
+  }
+}
+

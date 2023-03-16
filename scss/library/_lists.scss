@@ -1,0 +1,38 @@
+/*   LISTAS   */
+
+.about__article__list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    gap: 12px;
+    overflow-x: scroll;
+}
+
+@media all and (min-width: 1324px) {
+    .about__article__list {
+        justify-content: center;
+    }
+}
+
+.article__list__profile {
+    list-style-type: none;
+}
+
+.subir__pasos,
+.buscar__pasos {
+    padding: 0;
+}
+
+.subir__paso,
+.buscar__paso {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 12px 20px 30px;
+    gap: 15px;
+    border: 1px solid black;
+    border-radius: 42px;
+}
+
