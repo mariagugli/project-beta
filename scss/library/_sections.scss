@@ -11,6 +11,7 @@
   padding: 12px;
 }
 
+
 @media all and (min-width: 800px) {
   .topbar {
     justify-content: space-between;
@@ -30,18 +31,22 @@
   gap: 61px;
   border-radius: 0 0 38px 38px;
 
+  
   background: url("../../img/cartel_musica.png") no-repeat center;
+  background-color: black;
   background-size: cover;
 }
 
 .section__about {
   width: 100vw;
+  background-color: $color__white;
 }
 
 .section__resumenfotos,
 .section__funcionamiento,
 .section__asociacion {
   text-align: center;
+  background-color: $color__white;
 }
 
 .section__funcionamiento {

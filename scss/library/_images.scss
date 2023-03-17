@@ -1,6 +1,16 @@
 // IMAGES Y SVG //
 .topbar__logo {
     padding: 20px;
+    
+    min-width: 50px;
+    will-change: width;
+    
+}
+
+@media all and (min-width: 800px) {
+    .topbar__logo {
+        min-width: 70px;
+    }
 }
 
 .intro__slogan {

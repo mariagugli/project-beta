@@ -4,16 +4,56 @@
     appearance: none;
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 24px;
-    color: $color__white;
+    font-size: 32px;
+
     cursor: pointer;
-    border: 0;
-    transition: border 0.2s;
+    border: 1px solid $color__dark;
+    border-radius: 42px;
+    padding: 5px 30px;
 }
 
-.topbar__nav__link:hover {
-    border-bottom: 3px solid $color__white;
-    border-radius: 5px;
+.mobil__redes__link {
+    font-size: 12px;
+    padding: 5px 20px;
+    background-color: $color__secundario__morado;
+    color: $color__white;
+}
+@media all and (min-width: 800px) {
+    .topbar__nav__link {
+        
+        appearance: none;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 24px;
+    
+        cursor: pointer;
+        border: 0;
+        transition: border 0.2s;
+        padding: 0;
+    }
+    
+    .topbar__nav__link:hover {
+        border-bottom: 3px solid $color__white;
+        border-radius: 5px;
+    }
+
+    .mobil__menu,
+    .mobil__redes__link {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.nav__menu__cookies {
+    text-decoration:none;
+    cursor: pointer;
+    padding-right: 20px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.nav__menu__cookies:visited {
+    color: $color__secundario__morado;
 }
 
 .menu__redes__link {
