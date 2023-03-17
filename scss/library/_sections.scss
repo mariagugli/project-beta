@@ -57,6 +57,22 @@
   padding: 12px;
 }
 
+/*   PÁG. ABOUT   */
+
+.section__objetivos {
+  padding: 40px;
+  background: linear-gradient(180deg, rgba(80, 173, 177, 0) 0%, $color__principal__azul 63.54%);
+  border-radius: 0px 0px 42px 42px;
+  text-align: center;
+
+}
+
+.section__historia,
+.section__equipo {
+  text-align: center;
+  padding: 0 25px;
+}
+
 /*   FOOTER   */
 
 .footer {

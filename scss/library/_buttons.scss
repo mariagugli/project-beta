@@ -50,8 +50,13 @@ button {
 }
 
 .list__btn__profile {
+    text-decoration: none;
+    color: black;
     text-align: left;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     
 }
 
@@ -91,6 +96,7 @@ button {
     cursor: pointer;
 }
 
+
 /*  JAVASCRIPT   */
 
 .hide {
@@ -99,6 +105,13 @@ button {
 
 .block {
     display: block;
+}
+
+.none {
+    display: none;
+}
+.btn__timeline--select {
+    color: $color__principal__azul;
 }
 /*
 .dark {

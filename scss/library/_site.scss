@@ -8,6 +8,8 @@ body {
 
 /*   ARTICLES   */
 
+    /*   HOME PAGE   */
+
 .about__article {
     display: flex;
     flex-direction: column;
@@ -28,6 +30,14 @@ body {
     .funcionamiento__buscar {
         width: 50%;
     }
+}
+
+    /*   ABOUT PAGE   */
+
+.historia__2020,
+.historia__2021,
+.historia__2023 {
+    display: none;
 }
 
 /* DIVs */
@@ -115,7 +125,7 @@ body {
     padding: 0 8px;
     display: inline-block;
     text-align: center;
-
+    width: fit-content;
     font-size: 12px;
 }
 
@@ -183,6 +193,27 @@ body {
     .funcionamiento_partes {
         padding: 0 250px;
     }
+}
+
+/*   ABOUT PAGE   */
+
+.intro__timeline__btns {
+    border-top: 1px solid $color__dark;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 10px 0;
+}
+
+.intro__timeline__icons {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.explicacion__momento {
+    padding: 10px 22px;
+    font-size: 14px;
 }
 
 /*   SPAN   */

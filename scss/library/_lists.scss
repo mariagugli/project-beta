@@ -37,3 +37,68 @@
     border-radius: 42px;
 }
 
+.objetivos__list {
+    padding: 0;
+}
+
+@media all and (min-width: 1324px) {
+
+    .objetivos__list {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 60px 0;
+        
+    }
+    
+}
+
+.objetivos__list__item {
+    list-style-type: none;
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: $color__white;
+}
+
+@media all and (min-width: 1324px) {
+
+    .objetivos__list__item {
+        width: min-content;
+
+    }
+    
+}
+
+.equipo__grupo,
+.equipo__proyectos__grupo {
+    padding: 30px 0;
+    text-align: left;
+    
+}
+
+@media all and (min-width: 800px) {
+    .equipo__grupo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .equipo__miembro {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media all and (min-width: 1324px) {
+    .equipo__proyectos__grupo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .equipo__proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+}

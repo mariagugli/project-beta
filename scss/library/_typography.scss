@@ -19,7 +19,7 @@ h1,
 h2,
 .h2 {
     font-family: 'syncopate', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 24px;
 }
 
@@ -27,7 +27,7 @@ h3,
 .h3 {
     font-family: 'syncopate', sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 h6 {
@@ -70,6 +70,30 @@ input {
 
 .funcionamiento__explicacion {
     padding: 12px;
+}
+
+/*   ABOUT   */
+
+.equipo__proyectos {
+    text-align: left;
+}
+
+.miembro__text__nombre,
+.proyecto__text__nombre {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0 5px;
+    
+}
+
+.miembro__text__status,
+.proyecto__text__localizacion {
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color__secundario__morado;
+    
 }
 
 .project__name {
