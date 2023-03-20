@@ -113,7 +113,10 @@
 }
 
 /*   PÁG. SUBIR FORM   */
-
+.section__breadcrumbs {
+  display: flex;
+  gap: 5px;
+}
 .section__adform {
   border: 1px solid $color__black;
   border-radius: 27px;

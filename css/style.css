@@ -502,6 +502,13 @@ body {
   }
 }
 /*   PÁG. SUBIR FORM   */
+.section__breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
 .section__adform {
   border: 1px solid black;
   border-radius: 27px;
@@ -1213,10 +1220,6 @@ button {
 }
 
 /*   BOTONES SUBIR*/
-.btn__breadcrumbs--active {
-  color: rgb(80, 173, 177);
-}
-
 .anuncio__link {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1252,6 +1255,26 @@ button {
   gap: 5px;
 }
 
+.btn__breadcrumbs {
+  cursor: pointer;
+}
+
+.btn__breadcrumbs--active {
+  color: rgb(80, 173, 177);
+}
+
+.btn__breadcrumbs--hide {
+  display: none;
+}
+
+@media all and (min-width: 800px) {
+  .btn__breadcrumbs--hide {
+    display: inline-block;
+  }
+  .btn__breadcrumbs--brief {
+    display: none;
+  }
+}
 .btn__mas,
 .btn__mas--margin60 {
   background: rgb(185, 213, 138);

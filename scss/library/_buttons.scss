@@ -72,9 +72,7 @@ button {
 
 /*   BOTONES SUBIR*/
 
-.btn__breadcrumbs--active {
-    color: $color__principal__azul;
-}
+
 
 .anuncio__link {
     appearance: none;
@@ -100,6 +98,27 @@ button {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.btn__breadcrumbs {
+    cursor: pointer;
+}
+
+.btn__breadcrumbs--active {
+    color: $color__principal__azul;
+}
+
+.btn__breadcrumbs--hide {
+    display: none;
+}
+
+@media all and (min-width: 800px) {
+    .btn__breadcrumbs--hide {
+        display: inline-block;
+    }
+    .btn__breadcrumbs--brief {
+        display: none;
+    }
 }
 
 .btn__mas,
