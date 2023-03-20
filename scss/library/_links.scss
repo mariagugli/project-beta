@@ -18,6 +18,8 @@
     background-color: $color__secundario__morado;
     color: $color__white;
 }
+
+
 @media all and (min-width: 800px) {
     .topbar__nav__link {
         
@@ -37,7 +39,7 @@
         border-radius: 5px;
     }
 
-    .mobil__menu,
+    .movil__menu--on,
     .mobil__redes__link {
         visibility: hidden;
         display: none;

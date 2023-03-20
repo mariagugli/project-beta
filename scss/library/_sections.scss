@@ -4,13 +4,20 @@
 }
 
 .topbar {
-  position: fixed;
-  display: flex;
   justify-content: center;
-  width: 100%;
-  padding: 12px;
 }
 
+.topbar,
+.topbar__spacebtwn {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  z-index: 3;
+}
+
+.topbar__spacebtwn {
+  justify-content: space-between;
+}
 
 @media all and (min-width: 800px) {
   .topbar {
@@ -71,6 +78,54 @@
 .section__equipo {
   text-align: center;
   padding: 0 25px;
+}
+
+/*   PÁG. SUBIR PRINCIPAL   */
+
+.section__number {
+  border: 1px solid black;
+  border-radius: 100%;
+  width: fit-content;
+}
+
+.section__anuncios {
+  padding: 0 30px;
+}
+
+@media all and (min-width: 800px) {
+  .section__anuncios {
+    padding: 0 60px;
+    display: flex;
+    gap: 40px;
+  }
+}
+
+@media all and (min-width: 1220px) {
+  .section__anuncios {
+    padding: 0 300px;
+  }
+}
+
+@media all and (min-width: 1557px) {
+  .section__anuncios {
+    padding: 0 400px;
+  }
+}
+
+/*   PÁG. SUBIR FORM   */
+
+.section__adform {
+  border: 1px solid $color__black;
+  border-radius: 27px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (min-width: 1220px) {
+  .section__adform {
+    margin: 60px 200px;
+  }
 }
 
 /*   FOOTER   */

@@ -1,32 +1,29 @@
-/*function contrastTopbar () {
+// CAMBIAR TOPBAR AL PASAR SECTION INTRO EN HOME //
 
-    const bgWhite = document.querySelectorAll ('.js-section-dark');
-    const svgDark = document.querySelector('.js-dark-logo');
+window.addEventListener("scroll", function(event) {
+    let scroll = this.scrollY;
+    if (scroll > 800) {
+        document.querySelector('.topbar__logo').classList.add('small__logo');
 
-    const navMenu = document.querySelector('.topbar__nav');
-    const burgerMenu = document.querySelector ('.topbar__menu__line');
+        document.querySelector('.topbar').classList.add('topbar__spacebtwn');
+        document.querySelector('.topbar').classList.remove('topbar');
 
-    if(bgWhite === true) {
-        svgDark.classList.toggle('hide');
-        navMenu.classList.toggle('dark');
-        burgerMenu.classList.toggle('dark');
+        document.querySelector('.topbar__spacebtwn').style.background = 'linear-gradient(180deg, rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 0) 100%)';
+        document.querySelector('.movil__menu__subir').classList.remove('movil__menu--on');
+        document.querySelector('.movil__menu__buscar').classList.remove('movil__menu--on');
+    } else {
+        document.querySelector('.topbar__logo').classList.remove('small__logo');
 
-    } else return
-}
+        document.querySelector('.topbar__spacebtwn').classList.add('topbar');
+        document.querySelector('.topbar__spacebtwn').classList.remove('topbar__spacebtwn');
+        
+        document.querySelector('.topbar').style.background = 'none';
 
-
-function changeWidthLogo () {
-    let scroll = (window.pageXOffset / 5);
-    let width = scroll;
-
-    document.querySelector('.topbar__logo').style.width = width + '%';
-
-}
-
-window.addEventListener('scroll', () => {
-    requestAnimationFrame(changeWidthLogo);
-    document.querySelector('.topbar').classList.toggle('flex-start');
-}); */
+        document.querySelector('.movil__menu__subir').classList.add('movil__menu--on');
+        document.querySelector('.movil__menu__buscar').classList.add('movil__menu--on');
+       
+    };
+});
 
 //MENÚ HAMBURGUESA//
 
@@ -68,66 +65,5 @@ const pasosBuscar = document.querySelector('.pasos__buscar');
 const btnBuscar = document.querySelector('.btn__func__buscar');
 
 btnBuscar.addEventListener('click', toggleFuncBuscar);
-
-
-// Botón timeline //
-
-const btnTimeline = document.querySelectorAll('.btn__timeline');
-
-btnTimeline.forEach(btnYear => {
-    btnYear.addEventListener('click', () => {
-        document.querySelector('.btn__timeline--select')?.classList.remove('.btn__timeline--select');
-        btnYear.classList.add('.btn__timeline--select');
-    });
-});
-
-
-/*function toggleHistoria2020() {
-    historia2018.classList.toggle('none');
-    historia2021.classList.toggle('none');
-    historia2023.classList.toggle('none');
-    historia2020.classList.toggle('block');
-
-}
-function toggleHistoria2021() {
-    historia2018.classList.toggle('none');
-    historia2023.classList.toggle('none');
-    historia2020.classList.toggle('none');
-    historia2021.classList.toggle('block');
-
-}
-
-function toggleHistoria2023() {
-    historia2018.classList.toggle('none');
-    historia2020.classList.toggle('none');
-    historia2021.classList.toggle('none');
-    historia2023.classList.toggle('block');
-
-}
-
-function toggleHistoria2018() {
-    historia2020.classList.toggle('none');
-    historia2021.classList.toggle('none');
-    historia2023.classList.toggle('none');
-    historia2018.classList.toggle('block');
-
-}
-
-
-const historia2020 = document.querySelector('.historia__2020');
-const historia2021 = document.querySelector('.historia__2021');
-const historia2023 = document.querySelector('.historia__2023');
-const historia2018 = document.querySelector('.historia__2018');
-
-const btn2020 = document.querySelector('.btn__2020-js');
-const btn2021 = document.querySelector('.btn__2021-js');
-const btn2023 = document.querySelector('.btn__2023-js');
-const btn2018 = document.querySelector('.btn__2018-js');
-
-btn2020.addEventListener('click', toggleHistoria2020);
-btn2021.addEventListener('click', toggleHistoria2021);
-btn2023.addEventListener('click', toggleHistoria2023);
-btn2018.addEventListener('click', toggleHistoria2018);
-*/
 
 

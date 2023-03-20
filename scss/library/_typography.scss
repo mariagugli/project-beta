@@ -30,6 +30,11 @@ h3,
     font-size: 32px;
 }
 
+h4,
+.h4 {
+    font-weight: 700;
+}
+
 h6 {
     font-weight: 400;
     font-size: 12px;
@@ -96,6 +101,42 @@ input {
     
 }
 
+/*   SUBIR PAGE   */
+
+.anuncio__link p,
+.anuncio__link h2 {
+    width: 100%;
+}
+
+.anuncio__link h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media all and (min-width: 1220px) {
+    .anuncio__link h2 {
+        font-size: 32px;
+    }
+
+    .anuncio__link p {
+        font-size: 20px;
+    }
+}
+
+/*   SUBIR FORMULARIO   */
+
+.tag__label {
+    font-size: 12px;
+}
+
+@media all and (min-width: 800px) {
+    .tag__label {
+        font-size: 16px;
+    }
+}
+
+/*   GENERALES   */
+
 .project__name {
     font-family: 'syncopate', sans-serif;
     font-weight: 700;
@@ -105,6 +146,11 @@ input {
 .big__number {
     font-size: 96px;
     font-weight: 400;
+    padding: 0 44px;
+}
+
+.number__2 {
+    padding: 0 36px;
 }
 
 .text--center {
