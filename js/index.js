@@ -66,4 +66,7 @@ const btnBuscar = document.querySelector('.btn__func__buscar');
 
 btnBuscar.addEventListener('click', toggleFuncBuscar);
 
+// Desplegable de buscador //
+
+
 

@@ -125,8 +125,12 @@ input {
 
 /*   SUBIR FORMULARIO   */
 
-.tag__label {
+.tag__label,
+.tag__buscador {
     font-size: 12px;
+}
+.tag__buscador {
+    font-weight: 600;
 }
 
 @media all and (min-width: 800px) {
@@ -135,12 +139,63 @@ input {
     }
 }
 
+/*   BUSCAR PAGE   */
+
+.prueba {
+    text-decoration-line: aqua;
+}
+
+.tag__big {
+    font-size: 14px;
+}
+
+.btn__allresults {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.caption__title {
+    margin-bottom: 5px;
+    font-family: 'syncopate', sans serif;
+}
+
+.card__caption p {
+    margin: 15px 0 10px;
+    font-size: 0.8em;
+    color: $color__black;
+}
+  
+
 /*   GENERALES   */
+
+.intro__title {
+    font-family: 'syncopate', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+@media all and (min-width: 800px) {
+    .intro__title {
+        padding: 30px 60px;
+    }
+}
+
+@media all and (min-width: 1220px) {
+    .intro__title {
+        padding: 30px 300px;
+    }
+}
 
 .project__name {
     font-family: 'syncopate', sans-serif;
     font-weight: 700;
     font-size: 60px;
+}
+
+.strong__verde {
+    color: $color__principal__azul;
 }
 
 .big__number {

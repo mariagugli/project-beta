@@ -60,7 +60,7 @@ button {
     padding: 10px 20px;
 
     background: $color__gray;
-    border: 1px solid black;
+    border: 1px solid $color__black;
     border-radius: 42px;
 }
 
@@ -70,22 +70,49 @@ button {
     cursor: pointer;
 }
 
-/*   BOTONES SUBIR*/
-
-
+/*   BOTONES SUBIR  */
 
 .anuncio__link {
     appearance: none;
     text-decoration: none;
-    color: black;
+    color: $color__black;
     cursor: pointer;
     padding: 30px 20px;
-    border: 1px solid black;
+    border: 1px solid $color__black;
     border-radius: 42px;
 
     display: flex;
     flex-direction: column;
 
+}
+
+/*  BOTONES BUSCAR  */
+
+.btn__contact,
+.btn__info {
+    padding: 5px;
+    border: 1px solid $color__black;
+    border-radius: 5px;
+    font-size: 0.7em;
+    margin: 10px 0;
+    opacity: 0.65;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: $color__black;
+    background-color: $color__principal__verde;
+    cursor: pointer;
+}
+
+.btn__info {
+    background-color: $color__white;
+}
+
+.btn__contact:hover,
+.btn__info:hover {
+    opacity: 1;
 }
 
 /*   BOTONES GENERALES   */
@@ -136,6 +163,13 @@ button {
     margin: 60px 0;
 }
 
+.btn__allresults {
+    padding: 5px 16px;
+    border: 1px solid $color__black;
+    border-radius: 42px;
+    width: 100%;
+    margin-top: 10px;
+}
 
 .btn__suscribir {
     background-color: $color__dark;

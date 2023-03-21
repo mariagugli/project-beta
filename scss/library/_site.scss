@@ -62,6 +62,26 @@ body {
     margin-top: 60px;
 }
 
+    /*  BUSCAR PAGE - CARD   */
+
+.adcard {
+    font-family: 'poppins', Arial, sans-serif;
+    border-radius: 42px;
+    position: relative;
+    overflow: hidden;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: black;
+    text-align: left;
+    border: 1px solid black;
+    opacity: 0.9;
+}
+  
+.adcard:hover {
+    opacity: 1;
+}
+
 /* DIVs */
 
 .topbar__nav {
@@ -176,6 +196,26 @@ body {
     justify-content: space-around;
 }
 
+
+.intro__timeline__btns {
+    border-top: 1px solid $color__dark;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 10px 0;
+}
+
+.intro__timeline__icons {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.explicacion__momento {
+    padding: 10px 22px;
+    font-size: 14px;
+}
+
 .timeline__momento__explicacion {
     text-align: center;
     position: absolute;
@@ -218,8 +258,18 @@ body {
     padding-bottom: 20px;
 }
 
-.adform__tags {
-    display: inline-block;
+.adform__tags,
+.input__experiencia,
+.buscador__tags {
+    display: flex;
+    margin: 3px 0;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.input__experiencia {
+    flex-direction: column;
+    padding-top: 10px;
 }
 
 .footer__nav {
@@ -271,25 +321,53 @@ body {
     }
 }
 
-/*   ABOUT PAGE   */
+    /*   BUSCAR PAGE   */
 
-.intro__timeline__btns {
-    border-top: 1px solid $color__dark;
+.buscador__articles {
+    background-color: $color__white;
+    border: 1px solid $color__dark;
+    border-radius: 22px;
+    padding: 16px 12px;
+    transition: display 1s ease-in-out;
+}
+
+.buscador__tags {
+    margin-bottom: 10px;
+}
+
+.buscador__tags--principales {
+    margin-bottom: 20px;
+}
+
+.card__caption {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    position: relative;
+}
+
+.card__caption:before {
+    position: absolute;
+    content: '';
+    bottom: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 55px 0 0 400px;
+    border-color: transparent transparent transparent white;
+}
+
+.caption__grouptag {
     display: flex;
-    justify-content: space-around;
     gap: 5px;
-    padding: 10px 0;
 }
 
-.intro__timeline__icons {
-    padding: 10px 0;
+.caption__links {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-}
-
-.explicacion__momento {
-    padding: 10px 22px;
-    font-size: 14px;
 }
 
 /*   SPAN   */
@@ -304,6 +382,20 @@ body {
     border-radius: 3px;
     mix-blend-mode: screen;
 }
+
+    /*  BUSCAR PAGE */
+
+.caption__tag {
+    display: block;
+    font-size: 0.6em;
+    border: 1px solid black;
+    border-radius: 22px;
+    width: fit-content;
+    padding: 0 10px;
+    font-weight: 400;
+    font-family: 'poppins', sans serif;
+}
+
 
 
 

@@ -131,6 +131,31 @@
   }
 }
 
+/*  BUSCAR PAGE */
+
+.section__cards {
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+@media all and (min-width: 800px) {
+  .section__buscador {
+    padding: 0 100px;
+  }
+
+  .section__cards {
+    gap: 14px;
+  }
+}
+
+@media all and (min-width: 1220px) {
+  .section__buscador {
+    padding: 0 300px;
+  }
+}
 /*   FOOTER   */
 
 .footer {
