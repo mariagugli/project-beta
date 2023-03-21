@@ -66,7 +66,16 @@ const btnBuscar = document.querySelector('.btn__func__buscar');
 
 btnBuscar.addEventListener('click', toggleFuncBuscar);
 
-// Desplegable de buscador //
+// BOTON ABRIR FORM ANUNCIO //
 
+function toggleContactAd() {
+    formAd.classList.toggle('block');
+}
+
+const formAd = document.querySelector('.section__pagead__form');
+
+const btnContactAd = document.querySelector('.btn__contact--pagead');
+
+btnContactAd.addEventListener('click', toggleContactAd);
 
 

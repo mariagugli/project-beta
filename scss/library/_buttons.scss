@@ -89,6 +89,7 @@ button {
 /*  BOTONES BUSCAR  */
 
 .btn__contact,
+.btn__contact--pagead,
 .btn__info {
     padding: 5px;
     border: 1px solid $color__black;
@@ -113,6 +114,12 @@ button {
 .btn__contact:hover,
 .btn__info:hover {
     opacity: 1;
+}
+
+.btn__contact--pagead {
+    opacity: 1;
+    font-size: 1em;
+    background-color: $color__white;
 }
 
 /*   BOTONES GENERALES   */

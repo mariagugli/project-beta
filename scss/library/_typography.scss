@@ -164,7 +164,19 @@ input {
     font-size: 0.8em;
     color: $color__black;
 }
-  
+
+/*   ANUNCIO PAGE   */
+.summary__foto h1 {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.adcontent__article h3,
+.adcontent__article--foto h3 {
+    text-align: right;
+    width: 100%;
+}
+
 
 /*   GENERALES   */
 

@@ -82,6 +82,45 @@ body {
     opacity: 1;
 }
 
+/*  ANUNCIO PAGE    */
+
+.summary__foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px 0;
+    gap: 13px;
+
+    width: 100%;
+    height: 70%;
+    background: url(../../img/img_lacabaña.jpeg) no-repeat center;
+    background-size: cover;
+    border-radius: 35px;
+
+}
+
+.summary__text {
+    padding: 22px 0px;
+    color: $color__white;
+}
+
+.summary__btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.adcontent__article,
+.adcontent__article--foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    gap: 30px;
+    text-align: left;
+}
+
 /* DIVs */
 
 .topbar__nav {
@@ -370,9 +409,23 @@ body {
     justify-content: space-around;
 }
 
+/*  ANUNCIO PAGE    */
+.summary__tags {
+    padding: 0 20px;
+}
+
+@media all and (min-width: 1220px) {
+    .main__pagead {
+        display: flex;
+        position: relative;
+        padding: 0;
+    }
+}
+
 /*   SPAN   */
 
-.topbar__menu__line {
+.topbar__menu__line,
+.topbar__menu__line--white {
     display: block;
     width: 33px;
     height: 4px;
@@ -381,6 +434,10 @@ body {
     background: $color__dark;
     border-radius: 3px;
     mix-blend-mode: screen;
+}
+
+.topbar__menu__line--white {
+    background: $color__white;
 }
 
     /*  BUSCAR PAGE */
