@@ -1,71 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Syncopate:wght@400;700&display=swap');
 
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-h1,
-.h1 {
-    font-family: 'poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-h2,
-.h2 {
-    font-family: 'syncopate', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-}
-
-h3,
-.h3 {
-    font-family: 'syncopate', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-}
-
-h4,
-.h4 {
-    font-weight: 700;
-}
-
-h6 {
-    font-weight: 400;
-    font-size: 12px;
-}
-
-.menu__redes__link h6 {
-    font-size: 10px;
-}
-
-input {
-    font-family: 'poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-[placeholder="Escribe tu email"] {
-    font-size: 12px;
-}
-
+/*   HOME PAGE   */
 .text__intro {
-    font-family: 'syncopate', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
+    font-family: $font__family--brand;
+    font-weight: $font__brand--bold;
+    font-size: $header--m;
 }
 
 .btn__profile__text {
-    margin: 10px 0;
-}
-
-.btn__profile__text h4 {
-    font-weight: 400;
     margin: 10px 0;
 }
 
@@ -79,131 +21,81 @@ input {
 
 /*   ABOUT   */
 
-.equipo__proyectos {
-    text-align: left;
-}
-
 .miembro__text__nombre,
 .proyecto__text__nombre {
-    font-family: 'poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
+    font-family: $font__family--base;
+    font-size: $copy--m;
     padding: 10px 0 5px;
-    
 }
 
 .miembro__text__status,
 .proyecto__text__localizacion {
-    font-family: 'poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: $copy--s;
+    font-weight: $font__regular;
     color: $color__secundario__morado;
-    
 }
 
 /*   SUBIR PAGE   */
-
-.anuncio__link p,
-.anuncio__link h2 {
-    width: 100%;
-}
-
-.anuncio__link h2 {
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-@media all and (min-width: 1220px) {
-    .anuncio__link h2 {
-        font-size: 32px;
-    }
-
-    .anuncio__link p {
-        font-size: 20px;
+.anuncio__link p {
+    @include mq($bp-large) {
+        font-size: $copy--l;
     }
 }
 
 /*   SUBIR FORMULARIO   */
-
 .tag__label,
 .tag__buscador {
-    font-size: 12px;
-}
-.tag__buscador {
-    font-weight: 600;
+    font-size: $copy--xs;
 }
 
-@media all and (min-width: 800px) {
-    .tag__label {
-        font-size: 16px;
+.tag__label {
+    @include mq {
+        font-size: $copy--m;
     }
 }
 
 /*   BUSCAR PAGE   */
-
-.prueba {
-    text-decoration-line: aqua;
-}
-
-.tag__big {
-    font-size: 14px;
-}
-
+.tag__buscador,
 .btn__allresults {
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: $font__base--semibold;
+}
+
+.tag__big,
+.btn__allresults {
+    font-size: $copy--s;
 }
 
 .caption__title {
     margin-bottom: 5px;
-    font-family: 'syncopate', sans serif;
 }
 
 .card__caption p {
     margin: 15px 0 10px;
-    font-size: 0.8em;
+    font-size: $copy--s;
     color: $color__black;
 }
 
-/*   ANUNCIO PAGE   */
-.summary__foto h1 {
-    padding: 0 20px;
-    margin: 0;
-}
-
-.adcontent__article h3,
-.adcontent__article--foto h3 {
-    text-align: right;
-    width: 100%;
-}
-
-
 /*   GENERALES   */
-
 .intro__title {
-    font-family: 'syncopate', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    text-align: center;
+    font-family: $font__family--brand;
+    font-weight: $font__regular;
+    font-size: $header--s;
     padding: 30px 0;
-}
-
-@media all and (min-width: 800px) {
-    .intro__title {
+    @include mq {
         padding: 30px 60px;
     }
-}
-
-@media all and (min-width: 1220px) {
-    .intro__title {
+    @include mq($bp-large) {
         padding: 30px 300px;
     }
 }
 
 .project__name {
-    font-family: 'syncopate', sans-serif;
-    font-weight: 700;
-    font-size: 60px;
+    font-family: $font__family--brand;
+    font-weight: $font__brand--bold;
+    font-size: $header--l;
+    @include mq {
+        font-size: $header--xl;
+    }
 }
 
 .strong__verde {
@@ -211,15 +103,10 @@ input {
 }
 
 .big__number {
-    font-size: 96px;
-    font-weight: 400;
+    font-size: $header--xxl;
     padding: 0 44px;
 }
 
 .number__2 {
     padding: 0 36px;
-}
-
-.text--center {
-    text-align: center;
 }

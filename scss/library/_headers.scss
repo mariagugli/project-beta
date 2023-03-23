@@ -1,8 +1,78 @@
 //ENCABEZADOS//
-
-.bottombar__btn__subir h5 {
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+}
+
+h1,
+.h1 {
+    font-family: $font__family--base;
+    font-size: $copy--m;
+    font-weight: $font__regular;
+}
+
+h2,
+.h2,
+h3,
+.h3 {
+    font-family: $font__family--brand;
+    font-weight: $font__brand--bold;
+}
+
+h2,
+.h2 {
+    font-size: $header--s;
+}
+
+h3,
+.h3 {
+    font-size: $header--m;
+}
+
+h4,
+.h4 {
+    font-weight: $font__brand--bold;
+}
+
+h6 {
+    font-weight: $font__regular;
+    font-size: $copy--xs;
+}
+
+/*  HOME PAGE   */
+.bottombar__btn__subir h5 {
+    font-weight: $font__regular;
+    font-size: $copy--s;
+}
+
+.btn__profile__text h4 {
+    font-weight: $font__regular;
+    margin: 10px 0;
+}
+
+/*  SUBIR PAGE   */
+.anuncio__link h2 {
+    @include mq($bp-large) {
+        font-size: $header--m;
+    }
+}
+
+/*   ANUNCIO PAGE   */
+.summary__foto h1 {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.adcontent__article h3,
+.adcontent__article--foto h3 {
+    width: 100%;
+}
+
+/*  FOOTER  */
+.menu__redes__link h6 {
+    font-size: $copy--xxs;
 }

@@ -37,11 +37,15 @@
   padding: 20px 0;
   gap: 61px;
   border-radius: 0 0 38px 38px;
-
-  
-  background: url("../../img/cartel_musica.png") no-repeat center;
-  background-color: black;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+ 
+  /*background-image: url("../../img/cartel_musica.png") no-repeat center;*/
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 40%;
 }
 
 .section__about {
@@ -174,7 +178,8 @@
   margin: 0 25px;
 }
 
-.section__pagead__form {
+.section__pagead__form,
+.section__contactpage__form {
   border: 1px solid $color__black;
   border-radius: 42px;
   padding: 31px 27px;

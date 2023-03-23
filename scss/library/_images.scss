@@ -21,24 +21,37 @@
 
 }
 
-.article__list__profile img {
+.profile__img,
+.profile__img--home {
     width: 120px;
     height: 200px;
     object-fit: cover;
     border-radius: 42px;
 }
 
-@media all and (min-width: 1220px) {
-    .article__list__profile img {
+.profile__img {
+    @include mq ($bp-large) {
         width: 170px;
         height: 300px;
     }
+}
 
-    .profile__prefooter img {
+.profile__img--home {
+    @include mq ($bp-large) {
+        width: 125px;
+        height: 210px;
+    }
+}
+
+.profile__prefooter img {
+    @include mq ($bp-large) {
         width: 120px;
         height: 200px;
     }
+
+    
 }
+
 
 .resumenfotos__bgfotos--contactos {
     @include bgfotos__withtags;

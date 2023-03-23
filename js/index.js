@@ -1,3 +1,22 @@
+//fondo img cambia//
+
+/*function changeBg() {
+    const images = [
+        'url("../img/cartel_musica.png")',
+        'url("../img/cartel_interpretacion.png")',
+        'url("../img/cartel_danza.png")',
+        'url("../img/cartel_audiovisual.png")'
+    ]
+
+    const sectionBgImg = document.querySelector('.section__intro')
+    const bgImg = images[Math.floor(Math.random() * images.length)];
+    sectionBgImg.style.backgroundImage = bgImg;
+}
+
+setInterval(changeBg, 8000);*/
+
+
+
 // CAMBIAR TOPBAR AL PASAR SECTION INTRO EN HOME //
 
 window.addEventListener("scroll", function(event) {
