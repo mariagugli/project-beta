@@ -22,7 +22,8 @@
 }
 
 .profile__img,
-.profile__img--home {
+.profile__img--home,
+.profile__img--prefooter  {
     width: 120px;
     height: 200px;
     object-fit: cover;
@@ -43,7 +44,7 @@
     }
 }
 
-.profile__prefooter img {
+.profile__img--prefooter {
     @include mq ($bp-large) {
         width: 120px;
         height: 200px;
@@ -51,7 +52,6 @@
 
     
 }
-
 
 .resumenfotos__bgfotos--contactos {
     @include bgfotos__withtags;

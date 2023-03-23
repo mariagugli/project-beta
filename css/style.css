@@ -1108,7 +1108,8 @@ h6 {
 }
 
 .profile__img,
-.profile__img--home {
+.profile__img--home,
+.profile__img--prefooter {
   width: 120px;
   height: 200px;
   -o-object-fit: cover;
@@ -1131,7 +1132,7 @@ h6 {
 }
 
 @media all and (min-width: 1220px) {
-  .profile__prefooter img {
+  .profile__img--prefooter {
     width: 120px;
     height: 200px;
   }
