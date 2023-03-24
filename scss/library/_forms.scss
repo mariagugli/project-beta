@@ -7,7 +7,7 @@ input {
     font-family: $font__family--base;
 }
 
-/*   ABOUT PAGE  TIMELINE   */
+/*   ABOUT PAGE - TIMELINE   */
 
 .timeline__momento [type="radio"] {
     opacity: 0;
@@ -15,8 +15,8 @@ input {
 
 [type="radio"]:checked ~ .timeline__momento__btn {
     color: $color__principal__azul;
-    border: 1px solid white;
-    background-color: white;
+    border: 1px solid $color__white;
+    background-color: $color__white;
     z-index: 2;
 }
 
@@ -31,12 +31,12 @@ input {
     padding: 12px 22px;
     background-color: $color__light__gray;
     border: 1px solid $color__black;
-    border-radius: 17px;
+    border-radius: $border__radius--m;
     margin-top: 10px;
 }
 
 .adform__input__checkbox {
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 .adform__input__checkbox:checked {
@@ -47,9 +47,8 @@ input {
 .tag__buscador,
 .nivel__label {
     background: $color__light__gray;
-    border-radius: 22px;
+    border-radius: $border__radius--l;
     padding: 10px;
-    text-align: center;
     display: flex;
     cursor: pointer;
 }
@@ -71,7 +70,7 @@ input {
 [type="checkbox"]:checked ~ .tag__label,
 [type="radio"]:checked ~ .nivel__label {
     background: $color__principal__verde;
-    border-radius: 22px;
+    border-radius: $border__radius--l;
 }
 
 /*   BUSCAR BUSCADOR   */
@@ -92,7 +91,7 @@ input {
     width: fit-content;
     padding: 9px 9px 9px 40px;
     background: transparent url(../../svg/vector_lupa.svg) no-repeat 13px center;
-    border-radius: 22px;
+    border-radius: $border__radius--l;
     margin-bottom: 5px;
     transition: width 0.3s ease-in-out;
 }
@@ -102,14 +101,11 @@ input {
 }
 
 .buscador__form__input:focus {
-    width: 100%;
+    width: 100%; /*TODO width--100*/
     box-shadow: 0 0 3px 0 $color__principal__azul;
     border-color: $color__principal__azul;
-    color: $color__black;
     outline: none;
 }
-
-
 
 .buscador__form__input::-webkit-search-cancel-button {
     appearance: none;
@@ -119,8 +115,6 @@ input {
     background-size: 10px 10px;
 }
 
-
-
 /*   NEWSLETTER FORM   */
 .newsletter__form {
     display: flex;
@@ -129,17 +123,14 @@ input {
     align-items: center;
     padding: 30px 0;
     gap: 10px;
-}
-
-@media all and (min-width: 800px) {
-    .newsletter__form {
+    @include mq {
         flex-direction: row;
     }
-}    
+}   
 
 .newsletter__input {
-    border-bottom: 1px solid black;
-    width: 100%;
+    border-bottom: 1px solid $color__black;
+    width: 100%; /*TODO width--100*/
 }
 
 

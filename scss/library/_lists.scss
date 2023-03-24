@@ -3,14 +3,11 @@
 .about__article__list {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 100%; /*TODO width--100*/
     padding: 0;
     gap: 12px;
     overflow-x: scroll;
-}
-
-@media all and (min-width: 1220px) {
-    .about__article__list {
+    @include mq($bp-large) {
         justify-content: center;
     }
 }
@@ -27,77 +24,65 @@
 
 .subir__paso,
 .buscar__paso {
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    list-style-type: none;
-    text-align: left;
-    margin-bottom: 10px;
     padding: 12px 20px 30px;
     gap: 15px;
-    border: 1px solid black;
-    border-radius: 42px;
+    border: 1px solid $color__black;
+    border-radius: $border__radius--xl;
 }
 
 .objetivos__list {
     padding: 0;
-}
-
-@media all and (min-width: 1220px) {
-
-    .objetivos__list {
+    @include mq($bp-large) {
         display: flex;
         justify-content: space-evenly;
         padding: 60px 0;
-        
     }
-    
 }
 
 .objetivos__list__item {
     list-style-type: none;
-    padding-bottom: 15px;
-    font-size: 14px;
+    font-size: $copy--m;
     color: $color__white;
-}
-
-@media all and (min-width: 1220px) {
-
-    .objetivos__list__item {
+    @include mq($bp-large) {
         width: min-content;
-
     }
-    
 }
 
 .equipo__grupo,
 .equipo__proyectos__grupo {
     padding: 30px 0;
-    text-align: left;
-    
+    @include mq {
+        display: flex;
+    }
 }
 
-@media all and (min-width: 800px) {
-    .equipo__grupo {
-        display: flex;
+.equipo__grupo {
+    @include mq {
         justify-content: center;
         width: 100%;
         gap: 40px;
     }
+}
 
-    .equipo__miembro {
+.equipo__proyectos__grupo {
+    @include mq($bp-large) {
+        justify-content: space-around;
+    }
+}
+
+.equipo__miembro {
+    @include mq {
         display: flex;
         flex-direction: column;
     }
 }
 
-@media all and (min-width: 1220px) {
-    .equipo__proyectos__grupo {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .equipo__proyecto {
+.equipo__proyecto {
+    @include mq($bp-large) {
         display: flex;
         flex-direction: column;
     }

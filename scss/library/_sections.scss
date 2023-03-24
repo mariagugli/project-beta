@@ -1,29 +1,25 @@
 /////*     SECTIONS y TOPBAR    *//////
 .pattern__section {
-  margin-bottom: 80px;
-}
-
-.topbar {
-  justify-content: center;
+  margin-bottom: 80px; /*TODO margin-bottom--lv4 */
 }
 
 .topbar,
 .topbar__spacebtwn {
   position: fixed;
   display: flex;
-  width: 100%;
+  width: 100%; /*TODO width--100*/
   z-index: 3;
+}
+.topbar {
+  justify-content: center;
+  @include mq {
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .topbar__spacebtwn {
   justify-content: space-between;
-}
-
-@media all and (min-width: 800px) {
-  .topbar {
-    justify-content: space-between;
-    padding: 0;
-  }
 }
 
 .section__intro {
@@ -36,7 +32,8 @@
   align-items: flex-end;
   padding: 20px 0;
   gap: 61px;
-  border-radius: 0 0 38px 38px;
+  border-radius: 0 0 $border__radius--xl $border__radius--xl;
+
   animation-name: example;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -46,18 +43,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 40%;
-}
-
-.section__about {
-  width: 100vw;
-  background-color: $color__white;
-}
-
-.section__resumenfotos,
-.section__funcionamiento,
-.section__asociacion {
-  text-align: center;
-  background-color: $color__white;
 }
 
 .section__funcionamiento {
@@ -73,45 +58,33 @@
 .section__objetivos {
   padding: 40px;
   background: linear-gradient(180deg, rgba(80, 173, 177, 0) 0%, $color__principal__azul 63.54%);
-  border-radius: 0px 0px 42px 42px;
-  text-align: center;
-
+  border-radius: 0px 0px $border__radius--xl $border__radius--xl;
 }
 
 .section__historia,
 .section__equipo {
-  text-align: center;
   padding: 0 25px;
 }
 
 /*   PÁG. SUBIR PRINCIPAL   */
 
 .section__number {
-  border: 1px solid black;
+  border: 1px solid $color__black;
   border-radius: 100%;
   width: fit-content;
 }
 
 .section__anuncios {
   padding: 0 30px;
-}
-
-@media all and (min-width: 800px) {
-  .section__anuncios {
+  @include mq {
     padding: 0 60px;
     display: flex;
     gap: 40px;
   }
-}
-
-@media all and (min-width: 1220px) {
-  .section__anuncios {
-    padding: 0 300px;
+  @include mq($bp-large) {
+    padding: 0 250px;
   }
-}
-
-@media all and (min-width: 1557px) {
-  .section__anuncios {
+  @include mq($bp-extralarge) {
     padding: 0 400px;
   }
 }
@@ -123,14 +96,11 @@
 }
 .section__adform {
   border: 1px solid $color__black;
-  border-radius: 27px;
+  border-radius:$border__radius--l;
   padding: 30px;
   display: flex;
   flex-direction: column;
-}
-
-@media all and (min-width: 1220px) {
-  .section__adform {
+  @include mq($bp-large) {
     margin: 60px 200px;
   }
 }
@@ -143,20 +113,16 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-}
-
-@media all and (min-width: 800px) {
-  .section__buscador {
-    padding: 0 100px;
-  }
-
-  .section__cards {
+  @include mq {
     gap: 14px;
   }
 }
 
-@media all and (min-width: 1220px) {
-  .section__buscador {
+.section__buscador {
+  @include mq {
+    padding: 0 100px;
+  }
+  @include mq($bp-large) {
     padding: 0 300px;
   }
 }
@@ -170,7 +136,10 @@
   align-items: flex-start;
   padding: 20px;
   background: $color__principal__azul;
-  border-radius: 0px 0px 50px 50px;
+  border-radius: 0px 0px $border__radius--xl $border__radius--xl;
+  @include mq($bp-large) {
+    width: 50%;
+  }
 }
 
 .sections__informationad,
@@ -181,24 +150,19 @@
 .section__pagead__form,
 .section__contactpage__form {
   border: 1px solid $color__black;
-  border-radius: 42px;
+  border-radius: $border__radius--xl;
   padding: 31px 27px;
   display: flex;
   flex-direction: column;
 }
 
-.preefooter__pagead {
-  padding: 50px 20px;
-}
-
-@media all and (min-width: 1220px) {
-  .section__summary {
-    width: 50%;
-  }
-  .sections__informationad {
+.sections__informationad {
+  @include mq($bp-large) {
     padding: 100px 25px 0;
   }
-  .section__pagead__form {
+}
+.section__pagead__form {
+  @include mq($bp-large) {
     display: none;
     position: absolute;
     top: 100px;
@@ -209,20 +173,18 @@
   }
 }
 
-/*   FOOTER   */
+.preefooter__pagead {
+  padding: 50px 20px;
+}
 
+/*   FOOTER   */
 .footer {
   background-color: $color__principal__amarillo;
   padding: 60px 30px;
-
-}
-
-@media all and (min-width: 800px) {
-  .footer {
+  @include mq {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     gap: 90px;
   }
 }
-

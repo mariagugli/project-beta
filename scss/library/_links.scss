@@ -1,57 +1,40 @@
 /*   LINKS   */
 
 .topbar__nav__link {
-    appearance: none;
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 32px;
-
-    cursor: pointer;
+    font-size: $header--m;
     border: 1px solid $color__dark;
-    border-radius: 42px;
+    border-radius: $border__radius--xl;
     padding: 5px 30px;
+    @include mq {
+        font-size: $header--s;
+        border: 0;
+        transition: border 0.2s;
+        padding: 0;
+        
+        &:hover {
+            border-bottom: 3px solid $color__dark;
+            border-radius: 5px;
+        }
+    }
 }
 
 .mobil__redes__link {
-    font-size: 12px;
+    font-size: $copy--xs;
     padding: 5px 20px;
     background-color: $color__secundario__morado;
     color: $color__white;
 }
 
-
-@media all and (min-width: 800px) {
-    .topbar__nav__link {
-        
-        appearance: none;
-        font-family: 'Poppins';
-        font-weight: 400;
-        font-size: 24px;
-    
-        cursor: pointer;
-        border: 0;
-        transition: border 0.2s;
-        padding: 0;
-    }
-    
-    .topbar__nav__link:hover {
-        border-bottom: 3px solid $color__white;
-        border-radius: 5px;
-    }
-
-    .movil__menu--on,
-    .mobil__redes__link {
+.movil__menu--on,
+.mobil__redes__link {
+    @include mq {
         visibility: hidden;
         display: none;
     }
 }
-
 .nav__menu__cookies {
-    text-decoration:none;
-    cursor: pointer;
-    padding-right: 20px;
-    width: 100%;
-    font-size: 12px;
+    text-decoration: none;
+    font-size: $copy--xs;
 }
 
 .nav__menu__cookies:visited {
