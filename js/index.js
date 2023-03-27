@@ -1,27 +1,7 @@
-//fondo img cambia//
-
-/*function changeBg() {
-    const images = [
-        'url("../img/cartel_musica.png")',
-        'url("../img/cartel_interpretacion.png")',
-        'url("../img/cartel_danza.png")',
-        'url("../img/cartel_audiovisual.png")'
-    ]
-
-    const sectionBgImg = document.querySelector('.section__intro')
-    const bgImg = images[Math.floor(Math.random() * images.length)];
-    sectionBgImg.style.backgroundImage = bgImg;
-}
-
-setInterval(changeBg, 8000);*/
-
-
-
-// CAMBIAR TOPBAR AL PASAR SECTION INTRO EN HOME //
-
 window.addEventListener("scroll", function(event) {
     let scroll = this.scrollY;
     if (scroll > 800) {
+        document.querySelector('.topbar__logo').classList.remove('topbar--white');
         document.querySelector('.topbar__logo').classList.add('small__logo');
 
         document.querySelector('.topbar').classList.add('topbar__spacebtwn');
@@ -32,6 +12,7 @@ window.addEventListener("scroll", function(event) {
         document.querySelector('.movil__menu__buscar').classList.remove('movil__menu--on');
     } else {
         document.querySelector('.topbar__logo').classList.remove('small__logo');
+        document.querySelector('.topbar__logo').classList.add('topbar--white');
 
         document.querySelector('.topbar__spacebtwn').classList.add('topbar');
         document.querySelector('.topbar__spacebtwn').classList.remove('topbar__spacebtwn');
