@@ -20,6 +20,34 @@ $color__white--lowopacity: rgba(255, 255, 255, 0.2);
 $font__family--brand: 'syncopate', sans-serif;
 $font__family--base: 'poppins', sans-serif;
 
+//----- para crear clases con cada font size -----
+@each $name, $value in $size-vars {
+  .fs-#{$name} {
+      font-size: $value;
+  }
+}
+
+//----- para hacer clases con los colores para los textos y para los bg -----
+@each $key, $value in $color-list {
+  .text-#{$key} {
+      color: $value;
+  }
+  
+  .color-bg-#{$key} {
+      background-color: $value;
+  }
+
+  [fill="#{$key}"] {
+      fill: $value;
+  }
+  [stroke="#{$key}"] {
+      stroke: $value;
+  }
+  .fill-#{$key} {
+      fill: $value;
+  } 
+}
+
 /*    FONT SIZE   */
 $header--xxl: 5.625rem;   //90
 $header--xl: 3.75rem; //60
@@ -48,7 +76,6 @@ $border__radius--m: 1.125rem; //18
 $border__radius--s: 0.625rem; //10
 
 
-
 @keyframes example{
     0%{
       background-image: url("../../img/cartel_musica.png");
@@ -63,19 +90,9 @@ $border__radius--s: 0.625rem; //10
     100%{
       background-image: url("../../img/cartel_audiovisual.png");
     }
- }
-
-@mixin tag__color ($color: $color__principal__verde) {
-  font-size: 20px;
-  background-color: $color;
 }
 
-@mixin bgfotos__withtags ($bgfoto: (url("../../img/img-camara-frontal.jpg")no-repeat center), $text-align: right, $padding: 200px 45px, $bgsize: cover) {
-  background: $bgfoto;
-  background-size: $bgsize;
-  text-align: $text-align;
-  padding: $padding;
-}
+
 
 .margin-bottom--lv0 {
   margin-bottom: 10px;
@@ -113,14 +130,4 @@ $border__radius--s: 0.625rem; //10
   text-align: center;
 }
 
-$bp-small: 600px;
-$bp-medium: 800px;
-$bp-large: 1220px;
-$bp-extralarge: 1557px;
-
-@mixin mq($bp: $bp-medium, $bp-direction: min-width) {
-  @media all and ($bp-direction: $bp) {
-    @content;
-  }
-}
 

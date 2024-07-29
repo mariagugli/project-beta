@@ -1,0 +1,39 @@
+$bp-small: 600px;
+$bp-medium: 800px;
+$bp-large: 1220px;
+
+@mixin mq($bp: $bp-medium, $bp-direction: min-width) {
+  @media all and ($bp-direction: $bp) {
+    @content;
+  }
+}
+
+@mixin var-components($padding, $gap: none, $fs:x-small, $width: fit-content) {
+  padding: $padding;
+  gap: compVar($gap);
+  font-size: fs($fs);
+  width: $width;
+}
+
+@mixin btn-colors($bg-color, $br-color, $color-txt) {
+  background-color: $bg-color;
+  border-color: $br-color;
+  color: $color-txt;
+}
+
+@mixin icon-size($width, $height) {
+  width: sizeIcon($width);
+  height: $height;
+}
+
+@mixin tag__color ($color: $color__principal__verde) {
+    font-size: 20px;
+    background-color: $color;
+}
+  
+@mixin bgfotos__withtags ($bgfoto: (url("../../img/img-camara-frontal.jpg")no-repeat center), $text-align: right, $padding: 200px 45px, $bgsize: cover) {
+    background: $bgfoto;
+    background-size: $bgsize;
+    text-align: $text-align;
+    padding: $padding;
+}

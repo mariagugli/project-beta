@@ -1,4 +1,6 @@
-@import './library/variables.scss';
+@import './library/_variables.scss';
+@import './library/functions';
+@import './library/mixins.scss';
 @import './library/_utilities.scss';
 
 @import './library/_site.scss';
