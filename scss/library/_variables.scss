@@ -1,0 +1,130 @@
+/* Main colors */
+$coral: #EA6043;
+$coral__light: #FAD8D1;
+$coral__lighter: #FDEFED;
+$coral__dark: #E53D1A;
+$coral__darker: #5C180A;
+
+$yellow: #FEF371;
+$yellow__light: #FFFBCC;
+$yellow__lighter: #FFFDEB;
+$yellow__dark: #FDEA02;
+$yellow__darker: #655D01;
+
+$pink: #FDAEDB;
+$pink__light: #FECDE9;
+$pink__lighter: #FFEBF6;
+$pink__dark: #FB6ABD;
+$pink__darker: #64023A;
+
+$lily: #BCC4FF;
+$lily__light: #CCD2FF;
+$lily__lighter: #EBEDFF;
+$lily__dark: #6678FF;
+$lily__darker: #000C66;
+
+$lagoon: #99D5BB;
+$lagoon__light: #DBF0E7;
+$lagoon__lighter: #F1F9F5;
+$lagoon__dark: #4AB587;
+$lagoon__darker: #1E4836;
+
+$green: #C3FFC1;
+$green__light: #CEFFCC;
+$green__lighter: #EBFFEB;
+$green__dark: #08FF00;
+$green__darker: #036600;
+
+$forest: #1D7161;
+$forest__light: #D6F5EF;
+$forest__lighter: #EFFBF9;
+$forest__dark: #155146;
+$forest__darker: #0A2923;
+
+/* Gray scale */
+$white: white;
+$gray__light: #F9F9F9;
+$gray: #EDEDED;
+$gray__dark: #A2A1A1;
+$gray__darker: #313131;
+$black: black;
+
+/* Alert colors */
+$alert__green: #51D9A8;
+$alert__green__light: #D5F6EA;
+$alert__green__lighter: #EEFBF7;
+$alert__green__dark: #25A778;
+$alert__green__darker: #12543C;
+$alert__red: #F63939;
+$alert__red__light: #FDCECE;
+$alert__red__lighter: #FEEBEB;
+$alert__red__dark: #C30909;
+$alert__red__darker: #620404;
+$alert__yellow: #FFEB37;
+$alert__yellow__light: #FFFACC;
+$alert__yellow__lighter: #FFFDEB;
+$alert__yellow__dark: #CCB800;
+$alert__yellow__darker: #665C00;
+$alert__blue: #5B82FF;
+$alert__blue__light: #CCD8FF;
+$alert__blue__lighter: #EBEFFF;
+$alert__blue__dark: #0030CC;
+$alert__blue__darker: #001866;
+
+$color-list: (
+  'coral'               : $coral,
+  'coral__lighter'      : $coral__lighter,
+  'yellow'              : $yellow,
+  'pink'                : $pink,
+  'pink__lighter'       : $pink__lighter,
+  'pink__darker'        : $pink__darker,
+  'lily'                : $lily,
+  'black'               : $black,
+  'gray__darker'        : $gray__darker,
+  'white'               : $white
+);
+
+$color-primary: map-get($color-list,'coral');
+$color-secondary: map-get($color-list,'yellow');
+
+$size-vars: (
+  "xx-small" :    .875,   // 14px
+  "x-small"  :    1,      // 16px
+  "small"    :    1.25,   // 20px
+  "medium"   :    1.5,    // 24px
+  "x-normal" :    2,      // 32px
+  "normal"   :    2.25,   // 36px
+  "big"      :    2.5,    // 40px
+  "x-big"    :    3,      // 48px
+  "xx-big"   :    4,      // 64px
+  "xxx-big"  :    6,      // 96px
+  "huge"     :    8       // 128px
+);
+
+$weight-font: (
+  "regular"   :   400,
+  "semibold"  :   600,
+  "bold"      :   700
+);
+
+$components-vars: (
+  "none"      :    0,
+  "xxx-small" :   .25,      // 4px
+  "xx-small"  :    .50,     // 8px
+  "x-small"   :    .625,    // 10px
+  "small"     :    .75,     // 12px
+  "xx-medium" :    .875,    // 14px
+  "x-medium"  :    1,       // 16px
+  "medium"    :    1.125,   // 18px
+  "normal"    :    1.375,   // 22px
+  "x-normal"  :    1.75,    // 28px
+  "xx-normal" :    2,       // 32px
+  "xxx-normal":   2.25,     // 36px
+  "big"       :    2.50,    // 40px
+  "x-big"     :    2.625,   // 42px
+  "xx-big"    :    2.875,   // 46px
+  "xxx-big"   :    3.25,    // 52px
+  "huge"      :    3.5,     // 56px
+  "x-huge"    :    3.875,   // 62px
+  "xx-huge"   :    4.25     // 68px
+);
